@@ -4,27 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mitra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0px;
+        font-family: "Montserrat", sans-serif;
       }
 
       .header-1 {
         width: 100%;
         height: 80px;
-        background-color: ;
+
         display: flex;
-        flex-direction: ;
+
         align-items: center;
       }
 
-      .contener {
+      .search {
         width: 60;
         height: 100vh;
-        background-color: antiquewhite;
+
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        margin-top: 10px;
       }
       .item {
         height: 280px;
@@ -43,7 +51,6 @@
         align-items: center;
         width: 515px;
         height: 80px;
-        background-color: ;
       }
       .gender a {
         color: black;
@@ -53,7 +60,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: ;
+
         width: 50%;
         height: 40px;
 
@@ -128,7 +135,6 @@
         border: 1px solid rgb(195, 191, 191);
         border-radius: 8px;
         width: 60%;
-        margin-bottom: ;
       }
       .icon {
         border: 1px solid rgb(225, 216, 216);
@@ -146,17 +152,53 @@
         list-style: none;
 
         display: flex;
-        flex-direction: ;
+
         gap: 10px;
       }
-      }
-      .home  {
+
+      .home {
         display: flex;
-        flex-direction: ;
+        flex-wrap: wrap;
       }
-      .Jackets{display: flex;
-       flex-direction: row;
-       margin-left: 40px;
+      .Jackets {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        flex-wrap: wrap;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+      }
+
+      #filter {
+        position: relative;
+        border-bottom: 1 solid black;
+        width: 252px;
+        height: 36.8px;
+        height: 100%;
+      }
+
+      .filtertext {
+        font-weight: 100px;
+        position: absolute;
+
+        width: 100%;
+        border-bottom: 1px solid black;
+        box-shadow: 0px 1px 0px 0px;
+      }
+      .filtertext span {
+        padding: 0px 0px 15px 25px;
+      }
+      .header-2 {
+        width: 100%;
+
+        height: 64.15px;
+        border-bottom: 1px solid black;
+        box-shadow: 0px 1px 0px 0px;
+      }
+      .header-2 {
+        display: flex;
       }
     </style>
   </head>
@@ -223,10 +265,10 @@
       </header>
       <div class="home">
         <ul>
-          <li><div>Home /</div></li>
-          <li><div>Clothing /</div></li>
+          <li>Home/</li>
+          <li>Clothing/</li>
           <li>
-            <div><b>Jackets For Men & Women</b></div>
+            <b>Jackets For Men & Women</b>
           </li>
         </ul>
       </div>
@@ -234,15 +276,32 @@
         <div><b>Jackets For Men & Women</b></div>
         <div>-48674 items</div>
       </div>
+      <div class="container">
+        <nav id="filter">
+          <div class="filtertext">
+            <h4><span> FILTERS</span></h4>
+          </div>
+        </nav>
 
-      <div class="grid">
-        <header class="header-2"></header>
+        <div class="grid">
+          <header class="header-2">
+            <div class="headerpart">
+              <ul>
+                <li>Bundles<input type=" radio" /></li>
 
-        <div class="contener">
-          <div class="item item-1"><img src="imgfirst.webp" alt="" /></div>
-          <div class="item item-2"><img src="second.webp" alt="" /></div>
-          <div class="item item-3"><img src="third.webp" alt="" /></div>
-          <div class="item item-4"><img src="four.jpg" alt="" /></div>
+                <li><input type="" /></li>
+                <li><input type="" /></li>
+              </ul>
+            </div>
+            <li><input type="checkbox" name="" id="" /></li>
+          </header>
+
+          <div class="search">
+            <div class="item item-1"><img src="imgfirst.webp" alt="" /></div>
+            <div class="item item-2"><img src="second.webp" alt="" /></div>
+            <div class="item item-3"><img src="third.webp" alt="" /></div>
+            <div class="item item-4"><img src="four.jpg" alt="" /></div>
+          </div>
         </div>
       </div>
     </div>
